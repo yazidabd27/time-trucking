@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 250px;
+}
+
+.frames-block{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 25px 10px 0 ;
+    
+}
+
+.frames-block > div{
+    width: 25%;
+    margin: 10px 10px 0;
+    
+}
+
+.main-block > div{
+    border-radius: 10px;
+}
+
+.main-block .up div div:first-of-type{
+    font-size: 12px;
+    opacity: .5;
+    margin-top: 20px;
+}
+
+.main-block .up div div:nth-of-type(2){
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+
+.container .main-block .up{
+    background-color: hsl(246, 80%, 60%);
+    padding: 25px 60px 25px 25px;
+    transform: translateY(10%);
+}
+
+.container .main-block .up img{
+    border-radius: 50%;
+    border: 2px solid#fff;
+    width: 50px;
+    height: 50px;
+}
+
+.frames{
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.frames div{
+    margin: 15px 0;
+    font-size: 12px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.frames,
+.stat{
+    background-color: hsl(235, 46%, 20%);
+}
+
+.work-block .icon{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play-block .icon{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.self-care-block .icon{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.study-block .icon{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-block .icon{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social-block .icon{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.icon img{
+    width: 45px;
+    height: 45px;
+}
+
+.icon{
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+    
+}
+
+.stat{
+    transform: translateY(-10%);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+
+
+.stat .title{
+    padding-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current,
+.current span{
+    font-size: 30px;
+}
+
+.current{
+    padding: 5px 0;
+    
+}
+
+.previous{
+    font-size: 12px;
+    opacity: .5;
+}
+
+.frames .active{
+    opacity: 1;
+}
+
+.title img{
+    cursor: pointer;
+    width: 20px;
+}
+
+.stat:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
+.frames>div:hover{
+    opacity: 1;
+}
+
+@media (max-width:400px){
+    .container{
+        padding: 600px 0 50px;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .frames-block{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .frames-block > div{
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .main-block{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .main-block .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 140px;
+    }
+
+    .main-block .frames{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .frames div{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+
+}
